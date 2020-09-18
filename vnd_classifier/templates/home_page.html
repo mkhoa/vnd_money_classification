@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- Your code here -->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>VND Classifier</h1>
+        </div>
+    </div>
+ 
+    <div class="row">
+        <div class="col-md-6">
+            <div id="my-camera"></div>
+            <br>
+            <form id="form-capture-image">
+                <div id= "btn-capture-image" class="btn btn-lg btn-primary">Predict Now</div>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <div id="results">
+                <h3 id='class-result'>Predictions:</h3>
+ 
+                    <div id="results-prediction">
+                        <p id="prediction"></p>
+                        <p id="probs"></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
